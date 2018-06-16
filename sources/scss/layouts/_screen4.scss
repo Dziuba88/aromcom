@@ -1,0 +1,35 @@
+.screen-4 {
+  padding: 80px 0 0;
+  background: $accent url(assets/bg__screen--4.png) repeat-x top center;
+  color: #ffffff;
+
+  .screen__header:after {background-color: #fff;}
+
+  .screen__description {margin-bottom: 260px;}
+
+  &__footer {
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    img {
+      display: block;
+      position: absolute;
+      top: -230px;
+      left: 50%;
+      width: 350px;
+      margin-left: -175px;
+    }
+
+    @include mobile {
+      padding-top: 80px;
+      img {
+        width: 280px;
+        margin-left: -140px;
+      }
+    }
+  }
+
+}

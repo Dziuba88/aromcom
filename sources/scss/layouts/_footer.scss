@@ -1,0 +1,63 @@
+.footer {
+  background-color: $base;
+  color: #ffffff;
+  padding: 40px 0;
+  font-size: 16px;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+
+  .main-site a {
+    color: $accent;
+    text-decoration: none;
+    transition: .2s $standart;
+    &:hover {
+      color: #ffffff;
+    }
+
+  }
+
+  &__link {
+    a {
+      color: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: .2s $standart;
+
+      span, svg {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: $accent;
+        margin-right: 0.5em;
+      }
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+
+
+
+  @include mobile {
+    text-align: center;
+
+    .col {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .main-site br {display: none;}
+  }
+
+
+}

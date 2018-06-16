@@ -6,12 +6,41 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Aromcom Landing
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic-ext")
-    link(rel="stylesheet", href="assets/styles.css")
+    link(rel="stylesheet", href="styles.min.css")
   body
+    // header
+    include views/header
+    // end header
+    // screen 1
     include views/screen1
+    // end screen 1
+    // screen 2
     include views/screen2
-    script(src="assets/jquery-3.3.1.min.js")
-    script(src="assets/main.min.js")
-    script(src="assets/app.js")
+    // end screen 2
+    // screen 3
+    include views/screen3
+    // end screen 3
+    // screen 4
+    include views/screen4
+    // end screen 4
+    // screen 5
+    include views/screen5
+    // end screen 5
+    // screen 6
+    include views/screen6
+    // end screen 6
+    // screen 7
+    include views/screen7
+    // end screen 7
+    // screen 8
+    include views/screen8
+    // end screen 8
+    // footer
+    include views/footer
+    // end footer
+    script(src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
+    script(src="owl.carousel.min.js")
+    script(src="aos.min.js")
+    script(src="app.js")
 
 

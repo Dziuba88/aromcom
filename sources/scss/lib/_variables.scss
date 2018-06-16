@@ -1,0 +1,26 @@
+// Media Query Ranges //
+  //                              Small Screen:      768;
+  $sm-screen: 768px !default;   //Tablet Screen:     769x960;
+  $md-screen: 960px !default;   //Medium Screen:     961x1240;
+  $lg-screen: 1170px !default;  //Large Screen:      1241;
+
+// Grid //
+  $num-cols: 12 !default;
+  $gutter: 30px !default;
+
+// Typography
+$fontFamily: 'PT Sans', sans-serif !default;
+$fontSize: 16px !default;
+$lineHeight: 24px !default;
+
+// Color Theme //
+$base: #272727 !default;
+$accent: #db2c31 !default;
+$accent__dark: #6e1618 !default;
+$second: #0b1538 !default;
+
+// Timing Animations
+$deceleration: cubic-bezier(0, 0, .2, 1) !default;
+$standart: cubic-bezier(.4, 0, .2, 1) !default;
+$acceleration: cubic-bezier(.4, 0, 1, 1) !default;
+$sharp: cubic-bezier(.4, 0, .6, 1) !default;

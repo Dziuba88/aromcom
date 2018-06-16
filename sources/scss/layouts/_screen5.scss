@@ -1,0 +1,22 @@
+.screen-5 {
+  padding-bottom: 60px;
+
+  .owl-carousel .owl-stage {
+    display: flex;
+    align-items: stretch;
+  }
+  .owl-carousel .owl-item {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+
+    img {
+      margin-bottom: 30px;
+
+      &:last-child {margin-bottom: 0;}
+    }
+  }
+
+}

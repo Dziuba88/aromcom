@@ -1,0 +1,23 @@
+// GLOBAL
+@import 'lib/variables';
+@import 'lib/normalize';
+@import 'lib/grid';
+@import 'lib/global';
+@import 'lib/forms';
+
+// PLUGINS
+@import 'plugins/owl/owl.carousel';
+@import 'plugins/aos/aos';
+
+// LAYOUTS
+@import 'layouts/header';
+@import 'layouts/screen1';
+@import 'layouts/screen2';
+@import 'layouts/screen3';
+@import 'layouts/screen4';
+@import 'layouts/screen5';
+@import 'layouts/screen6';
+@import 'layouts/screen7';
+@import 'layouts/screen8';
+@import 'layouts/footer';
+

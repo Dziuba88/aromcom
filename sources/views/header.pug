@@ -1,0 +1,28 @@
+header.header
+  .header__links
+    a(href="tel:+37379701007")
+      svg: use(xlink:href="#icon__phone")
+      span +373 <strong>7970 1007</strong>
+    br
+    a(href="mailto:info@aromcom.md")
+      svg: use(xlink:href="#icon__envelope")
+      span info@aromcom.md
+    .main-site
+      span Перейти на 
+      a(href="http://aromcom.md" target="_blank") aromcom.md
+  .container
+    .header__menu
+      .header__menu--left
+        a(href="tel:+37379701007")
+          svg: use(xlink:href="#icon__phone")
+          span +373 <strong>7970 1007</strong>
+        a(href="mailto:info@aromcom.md")
+          svg: use(xlink:href="#icon__envelope")
+          span info@aromcom.md
+      .header__menu--center
+        svg.header--brand: use(xlink:href="#brand")
+      .header__menu--right
+        .main-site
+          span Перейти на 
+          a(href="http://aromcom.md" target="_blank") aromcom.md
+        a(href="#request").btn.accent оформить заявку

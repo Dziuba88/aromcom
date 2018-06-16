@@ -1,0 +1,82 @@
+.screen-1 {
+  background: url(assets/bg__screen--1.png) no-repeat top center scroll/cover;
+  position: relative;
+  z-index: 1;
+  padding-top: 170px;
+  padding-bottom: 30px;
+
+  @include mediumDown {
+    padding-top: 230px;
+  }
+
+  @include mobile {
+    padding-top: 260px;
+  }
+
+  h1 {
+    color: #ffffff;
+    padding-top: 60px;
+  }
+  p {
+    color: #ffffff;
+  }
+
+  &__form {
+    background-color: #ffffff;
+    box-shadow: 0 0 50px rgba(#000000, .35);
+    border-radius: 5px;
+    margin-bottom: 60px;
+    padding: 30px;
+  }
+
+  .benefit {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin-bottom: 30px;
+
+    &__icon {
+      display: block;
+      flex: none;
+      fill: $accent;
+      width: 60px;
+      height: 60px;
+    }
+
+    &__text {
+      padding-left: 15px;
+
+      h4, p {
+        margin: 0;
+      }
+      h4 {
+        text-transform: uppercase;
+        color: $accent;
+      }
+      p {
+        color: #ffffff;
+        line-height: 1;
+      }
+    }
+
+    @include medium {
+      display: block;
+      text-align: center;
+      padding-left: 0;
+      &__icon {
+        margin: 0 auto 15px;
+      }
+    }
+
+    @include mobile {
+      padding-left: 0;
+
+      &__icon {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  @include mobile {.screen__description br {display: none;}}
+}

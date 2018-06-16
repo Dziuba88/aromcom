@@ -1,0 +1,63 @@
+.screen-8 {
+  padding: 60px 0;
+  background-color: $accent;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+
+  @include mobile {
+    padding-top: 310px;
+  }
+
+  .col {
+    position: relative;
+  }
+
+  .request-image {
+    display: block;
+    position: absolute;
+    width: 350px;
+    top: -88px;
+    left: -50px;
+
+    @include mobile {
+      width: 280px;
+      left: 50%;
+      margin-left: -140px;
+      top: -332px;
+    }
+  }
+
+  .screen__header {
+    text-align: left;
+    line-height: 1;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &__form {
+    padding-top: 30px;
+    display: flex;
+
+    .form--input {
+      flex: 1;
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    .form--control {
+      flex: none;
+      margin: 0;
+    }
+
+    @include mobile {
+      display: block;
+      .form--input {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

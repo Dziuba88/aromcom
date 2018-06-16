@@ -1,4 +1,37 @@
-section.screen
-  .screen__head
-    .only--xs
-    .hide--xs
+section.screen-1
+  .container
+    h1.screen__header(data-aos="zoom-in-down")
+      span ароматизаторы с вашим логотипом
+      br
+      strong для промо акций и рекламы
+    p.screen__description Оформите заявку и наши менеджеры, в ближайшее время, <br>свяжутся с Вами для уточнения деталей
+    .row
+      .col.lg-4.offset-lg-4.md-6.offset-md-3.sm-8.offset-sm-2#request
+        .screen-1__form(data-aos-delay="300" data-aos="fade-up")
+          .form--input
+            label: svg: use(xlink:href="#icon__user")
+            input(type="text", placeholder="Ваше Имя")
+          .form--input
+            label: svg: use(xlink:href="#icon__phone")
+            input(type="tel", placeholder="Номер телефона")
+          .form--control: button.btn.accent.large отправить
+    .row
+      .col.md-4
+        .benefit
+          svg.benefit__icon: use(xlink:href="#icon__design")
+          .benefit__text
+            h4 Уникальный дизайн
+            p с учетом всех пожеланий<br>клиента
+      .col.md-4
+        .benefit
+          svg.benefit__icon: use(xlink:href="#icon__effect")
+          .benefit__text
+            h4 положительный эффект
+            p Вы не оставите равнодушным не одного из Ваших клиентов
+      .col.md-4
+        .benefit
+          svg.benefit__icon: use(xlink:href="#icon__quality")
+          .benefit__text
+            h4 Высокое качество
+            p Французская отдушка для производства духов и парфюма
+

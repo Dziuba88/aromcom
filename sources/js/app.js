@@ -33,21 +33,20 @@ $('.carousel__portfolio').owlCarousel({
 });
 
 $('.carousel__knifes').owlCarousel({
-  autoplay: true,
-  autoplayTimeout: 3000,
-  autoplayHoverPause: true,
   responsiveRefreshRate: 0,
   loop: true,
+  mouseDrag: false,
+  dots: false,
   nav: true,
   navText: [
     '<svg class="benefit__icon"><use xlink:href="#angle__left"></use></svg>',
     '<svg class="benefit__icon"><use xlink:href="#angle__right"></use></svg>'
   ],
   responsive:{
-    0: {dots: false,items:1,slideBy:1},
-    520: {dots: false,items:3,slideBy:3},
-    960: {dots: true,items:5,slideBy:5},
-    1170: {dots: true,items:6,slideBy:6}
+    0: {items:1,slideBy:1},
+    520: {items:3,slideBy:3},
+    960: {items:5,slideBy:5},
+    1170: {items:6,slideBy:6}
   }
 });
 
